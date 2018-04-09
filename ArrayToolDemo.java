@@ -2,6 +2,7 @@ class ArrayToolDemo
 {
 	public static void main(String[] args) {
 		int[] arr = {3, 5, 89, 45, 20, 10};
+		ArrayTools tool = new ArrayTools();
 		int max = ArrayTools.getMax(arr);
 		System.out.println("max=" + max);
 

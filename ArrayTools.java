@@ -1,5 +1,13 @@
+/*
+用类封装实现工具
+讲类中的函数都变成静态方法，直接通过类名调用，不需要存在类中的成员变量
+私有化一些不需要外露的方法，同时私有化构造函数，防止不必要的创建对象占用内存
+*/
+
 class ArrayTools
-{
+{	
+	private ArrayTools(){}
+
 	public static int getMax(int[] arr)
 	{
 		int max = 0;
@@ -42,7 +50,7 @@ class ArrayTools
 		}
 	}
 
-	public static void swap(int[] arr, int a, int b)
+	private static void swap(int[] arr, int a, int b)
 	{
 		int temp = arr[a];
 		arr[a] = arr[b];

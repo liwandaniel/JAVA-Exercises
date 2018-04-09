@@ -1,6 +1,6 @@
 class ArrayTools
 {
-	public int getMax(int[] arr)
+	public static int getMax(int[] arr)
 	{
 		int max = 0;
 		for (int x = 1; x < arr.length; x++) {
@@ -10,7 +10,7 @@ class ArrayTools
 	return arr[max];
 	}
 
-	public int getMin(int[] arr)
+	public static int getMin(int[] arr)
 	{
 		int min = 0;
 		for (int y = 1; y < arr.length; y++) {
@@ -20,7 +20,7 @@ class ArrayTools
 	return arr[min];
 	}
 
-	public void selectSort(int[] arr)
+	public static void selectSort(int[] arr)
 	{
 		for (int x = 0; x<arr.length-1; x++) {
 			for (int y=x+1; y<arr.length; y++) {
@@ -31,7 +31,7 @@ class ArrayTools
 		}
 	}
 
-	public void bubbleSort(int[] arr)
+	public static void bubbleSort(int[] arr)
 	{
 		for (int x = 0; x<arr.length-1; x++) {
 			for (int y=0; y<arr.length-x-1; y++) {
@@ -42,14 +42,14 @@ class ArrayTools
 		}
 	}
 
-	public void swap(int[] arr, int a, int b)
+	public static void swap(int[] arr, int a, int b)
 	{
 		int temp = arr[a];
 		arr[a] = arr[b];
 		arr[b] = temp;
 	}
 
-	public void printArr(int[] arr)
+	public static void printArr(int[] arr)
 	{	
 		System.out.print("[");
 		for (int x = 0; x < arr.length; x++) {

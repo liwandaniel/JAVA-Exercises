@@ -2,12 +2,12 @@
 继承函数的重写（覆盖）
 */
 class Father{
+	int num;
 	Father(int x)
 	{
 		num = 60;
 		System.out.println("run father" + x);
 	}
-	int num;
 	// int num = 4;
 	void show()
 	{

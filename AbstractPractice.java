@@ -1,4 +1,4 @@
-class Employee{
+abstract class Employee{
 	private String name;
 	private String id;
 	private double salary;
@@ -10,10 +10,7 @@ class Employee{
 		this.salary = salary;
 	}
 
-	public abstract void work()   //因为不能确认继承的类是否是用同样的功能，所以选择抽象方法
-	{
-		System.out.println("Employee work");
-	}
+	public abstract void work();   //因为不能确认继承的类是否是用同样的功能，所以选择抽象方法
 }
 
 
